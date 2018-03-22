@@ -1,28 +1,20 @@
 # Use Task Guide and BPM to create an acceptance test suite
 
-You may now use Taks Guides and BPM to represent your user acceptance test plan and help you organize your acceptance tests by business processes. This article walks through the process of creating an acceptance test suite to be used for either manual or automatic testing in four easy steps.
+You can use Taks Guides and BPM to create your user acceptance test plan. This enables you to organize your acceptance tests by business processes and synchrnoize BPM to VSTS allowing you to manage test execution and results. This article walks through the process of creating an acceptance test suite to be used for either manual or automatic testing in four easy steps.
 
 ## 1 .Create a BPM library
 
-There are two ways to create a Business process modeler (BPM) library. You can create a new library that has no lines or task recordings, or you can copy an existing library.
+There are several ways to create a Business process modeler (BPM) library. For instructions on how to create libraries in BPM see https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/creating-editing-browsing
 
-In Microsoft Dynamics Lifecycle Services (LCS), open a project, click on the **More tools** dropdown, and then click **Business process modeler**.
+In this article SHOW USING IMPORT FROM EXCEL 
 
-![Navigate To BPM](LINK "Navigate To BPM")
+show example with photos 
 
-To create a new library, right-click any library, and then, in the lower-left corner of the window, click *![alt text]("")*Create**.
+**For the purpose of this article describe test case library **
 
-![Create New Library](LINK "Create New Library")
+## 2. Record Test Cases and Upload to BPM 
 
-Or, to copy an existing library, right-click that library, and then, in the lower-left corner of the window click, **Copy.**
-
-![Copy Library](LINK "Copy Library")
-
-Then Enter a name for the library and click **Create**.
-
-## 2. Create and Save or Upload Task Recording to BPM
-
-Next you'll need to connect a Task Recording to BPM, there are three ways to do this. You can create a new Task Reocrding and save it to BPM, save an existing Task Reocrding to BPM, or upload an AXTR file to BPM.
+Next you'll need to create your test cases using Task Recorder and upload them to BPM, there are three ways to do this. You can create a new Task Recording and save it to BPM, save an existing Task Reocrding to BPM, or upload an AXTR file to BPM.
 
 ### To create a new Task Recording and save to BPM 
 First, open the client and log in. Note: It&#39;s good practice to refresh the browser before each new recording. This creates a new user session and restarts Task Recorder, providing the most stable recording experience.
@@ -48,8 +40,7 @@ Click **Save to Lifecycle Services**.
 Select the library you want to save the recording to and **Save**.
 
 ### To save an existing Task Recording to BPM
-?????????????????
-
+IS it just opening up to edit in AX and then saving it ? 
 
 
 ### To upload an AXTR file to BPM 
@@ -83,7 +74,13 @@ You can also start VSTS synchronization from the toolbar in a BPM library. Selec
 ## 4. Create a test suite in VSTS
 
 This guide uses BPM to define a test plan by business processes. For instructions on how to create other test plans, see [Create a test plan and test suite](https://docs.microsoft.com/en-us/vsts/manual-test/getting-started/create-a-test-plan).
- 
+
+To create a test suite in VSTS, log into VSTS and select the project you want to test in.
+
+Select **Test** from the toolbar.
+
+Select **+** from the left pane and select **Requirement-based suite**
+
 
 ### Executing manually test cases
 
