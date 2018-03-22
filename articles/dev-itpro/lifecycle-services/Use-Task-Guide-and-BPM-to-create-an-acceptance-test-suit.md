@@ -60,7 +60,7 @@ Select **Browse** to find and select the file to upload, and then select **Uploa
 
 ## 3. Sync with VSTS   
 
-To synchronize a BPM library with a VSTS project, you will need to setup a connection between the LCS project and VSTS. For details on how to configure, see [Configure your LCS project and connect to LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/synchronize-bpm-vsts#configure-your-lcs-project-to-connect-to-vsts). 
+Next, you'll need to synchronize your BPM library with your VSTS project. For details on how to configure, see [Configure your LCS project and connect to LCS](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/synchronize-bpm-vsts#configure-your-lcs-project-to-connect-to-vsts). 
 
 Once configuration is complete, to synchronize a BPM library with a VSTS project, on the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **VSTS sync**.
 
@@ -70,40 +70,35 @@ You can also start VSTS synchronization from the toolbar in a BPM library. Selec
 
 ![VSTS Sync2](LINK "VSTS Sync2")
 
+Once this step is complete, your task recordings will become test cases in VSTS.
+**SHOW  EXPENSE REPORT test case IN VSTS**
+
+In addition to the test steps, the task recording XML file is attached to the VSTS test case. Tis file will be needed in case you wish to automate test execution. 
 
 ## 4. Create a test suite in VSTS
 
-This guide uses BPM to define a test plan by business processes. For instructions on how to create other test plans, see [Create a test plan and test suite](https://docs.microsoft.com/en-us/vsts/manual-test/getting-started/create-a-test-plan).
+Next you will need to create a test suite in VSTS. A test suite allows you to run a suite of tests and manage, investigate, and track  results. 
 
 To create a test suite in VSTS, log into VSTS and select the project you want to test in.
 
 Select **Test** from the toolbar.
 
-Select **+** from the left pane and select **Requirement-based suite**
+Select **+** from the left pane and select **Static suite**
 
 
-### Executing manually test cases
+### Executing manual test cases
 
-For more detailed instructions, see [Run manual tests](https://docs.microsoft.com/en-us/vsts/manual-test/getting-started/run-manual-tests).
+Once you have a test suite, you are ready to use it for regression testing after updates made to your D365FO application in a sandbox or test environment.  
 
-Log into VSTS and select the project you want to test in
+Execute the test cases in your test suite manually or play the task recordings that are part of the test suite and use VSTS to mark the test cases as passed or failed.
 
-Select **Test** from the toolbar.
-
-Select the test suite you’d like to run from the left pane.
-
-Select **Run** and Microsoft Test Runner will open and run in a new browser. 
-
-Start the app that you want to test. Note: Your app doesn't have to run on the same computer as Test Runner. You just use Test Runner to record which test steps pass or fail while you manually run a test.
-
-Mark each test step as either passed or failed based on the expected results. If a test step fails, you can enter a comment on why it failed.
-
-Select **Create bug** to create a bug to describe what failed.
-
-When you've run all your tests, save the results and close Test Runner. All the test results are stored in VSTS.
-You can now see the testing status for the suite and the most recent result for each test. 
+**ADD SCREENSHOTS SHOW MARK TESTS**
 
 
+VSTS also proivdes a tool, **Test Runner**, to manage manual test case execution. For instructions on how to use Test Runner, see [Run manual tests](https://docs.microsoft.com/en-us/vsts/manual-test/getting-started/run-manual-tests).
+
+
+VSTS provides a rich set of features to manage and TAKE ADVANTAGE  
 ### Executing automatic test cases
 
 **ROBERT TO WRTIE**
