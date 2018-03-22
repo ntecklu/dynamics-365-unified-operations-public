@@ -63,6 +63,7 @@ In the right pane, select **Upload**.
 ![Upload AXTR 1](LINK "Upload AXTR 1")
 
 Select **Browse** to find and select the file to upload, and then select **Upload**.
+
 ![Upload AXTR 2](LINK "Upload AXTR 2")
 
 
